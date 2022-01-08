@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <style>
+        section{
+            height: 100vh;
+        }
+
+        #page1{
+            background-color: white;
+        }
+        #page2{
+            background-color: blue;
+        }
+        #page3{
+            background-color: red;
+        }
+        #page4{
+            background-color: mediumpurple;
+        }
+        #top1{
+            background-color: red;
+        }
+        #top2{
+            background-color: gray;
+        }
+        #top3{
+            background-color: orange;
+        }
+        #top4{
+            background-color: coral;
+        }
+
+        body>section>div:nth-of-type(1){
+            height: 50px;
+            position: sticky;
+            font-size: 15px;
+            top: 0;
+            padding-left: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        body>section>div:nth-of-type(2){
+            height: 0px;
+            color: black;
+            font-size: 80px;
+            font-weight: bold;
+            line-height: 100vh;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<section id="page1">
+    <div id="top1">
+        <h1>Card 1</h1>
+    </div>
+    <div>
+        Hello
+    </div>
+
+</section>
+
+<section id="page2">
+    <div id="top2">
+        <h1>Card 2</h1>
+    </div>
+    <div>
+        How
+    </div>
+
+</section>
+
+<section id="page3">
+    <div id="top3">
+        <h1>Card 3</h1>
+    </div>
+    <div>
+        Are
+    </div>
+
+</section>
+
+<section id="page4">
+    <div id="top4">
+        <h1>Card 4</h1>
+    </div>
+    <div>
+        You..?
+    </div>
+
+</section>
+
+</body>
+</html>

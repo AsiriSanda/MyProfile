@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+
+    <style>
+        header {
+            position: relative;
+            box-shadow: -2px 6px 7px -2px gray;
+
+        }
+        header>img{
+            width: 200px;
+            margin: 15px;
+        }
+
+        header > ul{
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+            list-style: none;
+            font-size: 20px;
+        }
+
+        header>ul>li{
+            display: inline-block;
+            padding: 0 10px 0 10px;
+        }
+
+        header>ul>li:hover{
+            cursor: pointer;
+            color: red;
+        }
+
+        body > main{
+            position: relative;
+        }
+
+        main > nav{
+            background-color: rebeccapurple;
+            width: 200px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+
+
+
+        }
+
+        main>nav>ul{
+            color: white;
+            font-size: 20px;
+            list-style: none;
+            margin-top: 20px;
+
+        }
+
+        main> nav > ul > li{
+            padding-bottom: 30px;
+        }
+        main> nav > ul > li:hover{
+            cursor: pointer;
+            color: cyan;
+
+        }
+
+        main>section{
+            margin-left: 190px;
+            padding: 10px;
+            min-height: 580px;
+        }
+
+        main>section>section{
+            height: 300px;
+            position: relative;
+        }
+
+        main>section>section>div{
+            position: absolute;
+            height: 100%;
+            width: calc(100%/3);
+        }
+
+        main> section>section>div:nth-child(1){
+            border-right: 5px white;
+            left: 0;
+            background-image: url("assets/images/monkey.PNG");
+            background-size: cover;
+        }
+
+        main> section>section>div:nth-child(2){
+            border-right: 5px white;
+            left: calc(100%/3);
+            background-image: url("assets/images/monkey.PNG");
+            background-size: cover;
+        }
+
+        main> section>section>div:nth-child(3){
+            border-right: 5px white;
+            left: calc((100%/3)*2);
+            background-image: url("assets/images/monkey.PNG");
+            background-size: cover;
+        }
+
+        body>footer{
+            height: 60px;
+            background-color: gray;
+        }
+
+        body>footer>p{
+            margin-top: 0;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+
+    </style>
+</head>
+
+
+<body>
+<header>
+    <img src="assets/images/ijse.png">
+    <ul>
+        <li>Home</li>
+        <li>services</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+    </ul>
+
+</header>
+
+<main>
+    <nav>
+        <ul>
+        <li>Home</li>
+        <li>services</li>
+        <li>Contacts</li>
+        <li>About Us</li>
+        </ul>
+    </nav>
+    <section>
+        <section>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam aut consectetur corporis
+            cumque eligendi expedita illum mollitia non odit quas, quasi qui repellat saepe sapiente similique sunt
+            veniam?</p>
+        <p>Ab accusamus ad asperiores, debitis delectus, deserunt distinctio dolore ducimus eius esse ex inventore
+            itaque iusto libero maxime minima nemo nesciunt nihil possimus quis quo sit tempora ut voluptas
+            voluptatibus?</p>
+        <p>Ad aspernatur autem blanditiis consequatur cum dolorem eos eveniet fugit impedit ipsum magni nemo odio omnis
+            perspiciatis quae quaerat quia, quibusdam quod rem rerum sapiente unde ut veritatis voluptatibus
+            voluptatum!</p>
+        <p>A aliquam amet aperiam corporis cumque cupiditate debitis dicta distinctio dolor fuga harum iure libero
+            nesciunt odit provident quasi quibusdam quos ratione recusandae sed sequi, totam unde, ut velit
+            voluptatem.</p>
+        <p>Accusamus aliquid animi cupiditate dicta distinctio dolorem, error eveniet excepturi hic illo impedit
+            laboriosam magni minus molestias necessitatibus nemo non numquam odio quod rem, repudiandae soluta tempora,
+            tenetur ullam vel?</p>
+        <p>At aut delectus distinctio facere fugiat, fugit hic, laudantium minus necessitatibus non porro possimus
+            praesentium quibusdam, reprehenderit rerum? Assumenda atque consequuntur delectus facilis fugiat fugit
+            necessitatibus officia quaerat rerum saepe?</p>
+        <p>Maiores modi, quae? Adipisci asperiores blanditiis consequatur cum cupiditate distinctio est et explicabo
+            facilis, harum illo incidunt nam nemo neque nisi nulla numquam perspiciatis recusandae reprehenderit
+            temporibus unde velit voluptate.</p>
+        <p>A consequatur error magnam mollitia neque odio officia similique suscipit voluptatum. Ab architecto assumenda
+            distinctio id magnam, nihil praesentium quia reiciendis tenetur voluptatem? Accusantium, aliquid aperiam aut
+            magni maxime quis.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Develop By IJSE</p>
+</footer>
+
+</body>
+</html>

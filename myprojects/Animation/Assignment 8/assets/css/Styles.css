@@ -1,0 +1,35 @@
+section{
+    height: 100vh;
+    position: relative;
+}
+section > div{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    animation-name: waterdrop;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+}
+
+@keyframes waterdrop{
+    from{
+        width: 50px;
+        height: 50px;
+        border: 2px solid blue;
+    }
+    to{
+        width: 400px;
+        height: 400px;
+        border: 2px solid aqua;
+
+    }
+}

@@ -8,7 +8,7 @@
 
 <h3 align="center">About Me</h3>
 
-![Home Section Img](MyProfile/assets/images/preview/aboutme.PNG)
+![Home Section Img](assets/images/preview/aboutme.PNG)
 
 <h3 align="center">Educations</h3>
 

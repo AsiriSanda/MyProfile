@@ -3,7 +3,9 @@
 <h3 align="center">This is My Profile</h3>
 
 <h3 align="center">Home </h3>
+
 ![Home Section Img](assets/images/preview/home.PNG)
+
 <h3 align="center">About Me</h3>
 ![Home Section Img](MyProfile/assets/images/preview/aboutme.PNG)
 <h3 align="center">Educations</h3>

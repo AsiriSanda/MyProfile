@@ -5,9 +5,9 @@
 <h3 align="center">Home </h3>
 ![Home Section Img](assets/images/preview/home.PNG)
 <h3 align="center">About Me</h3>
-![Home Section Img](assets/images/preview/aboutme.PNG)
+![Home Section Img](https://github.com/AsiriSanda/MyProfile/blob/master/assets/images/preview/aboutme.PNG)
 <h3 align="center">Educations</h3>
-![Home Section Img](assets/images/preview/EDU.PNG)
+![Home Section Img](assets/images/preview/edu.PNG)
 <h3 align="center">Skills</h3>
 ![Home Section Img](assets/images/preview/skill.PNG)
 <h3 align="center">Projects</h3>

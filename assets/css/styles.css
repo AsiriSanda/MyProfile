@@ -1,0 +1,272 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: rgba(33, 33, 33, 0.82);
+}
+
+.wrapper{
+    max-width: 1282px;
+    margin: 0 auto;
+}
+
+header{
+
+    height: 100vh;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1282px;
+    box-shadow: 0 7px 8px rgba(30, 27, 27, 0.23);
+    z-index: 100;
+}
+
+nav .logo {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    color: #ffffff;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    list-style: none;
+    margin: 0;
+}
+nav ul li a{
+    font-weight: normal;
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.my-sec{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-sec .center{
+    padding-left: 31px;
+    padding-right: 60px;
+}
+
+.my-sec .center h1 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.my-sec .center p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.my-sec .rightphoto img{
+    height: 500px;
+    padding-top: 46px;
+}
+
+section{
+    margin-top: 60px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.about-me p{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.name p{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+
+
+}
+
+.age p{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+.nationality p{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+
+}
+
+.email p{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: right;
+
+}
+
+.Phone p{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: right;
+    top: 0;
+
+}
+
+.edu-card{
+    position: absolute;
+}
+
+.edu-card .content{
+    border-radius: 13px;
+    background: #62727B;
+    box-shadow: 8px 3px 4px rgba(118, 255, 3, 0.5);
+    padding: 8px 32px;
+
+}
+
+.edu-card.ijse{
+    right: 47%;
+
+}
+
+
+.btn{
+    color: white;
+    display: inline-block;
+
+    background: rgba(33, 33, 33, 0.82);
+    border: 4px solid #76FF03;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.btn.cv{
+    font-size: 30px;
+    font-weight: 600;
+    position: relative;
+    right: -470px;
+}
+
+.btn.view{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn.ma{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+
+body{
+    overflow-x: hidden;
+}
+
+section{
+    padding:1rem;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex:1 1 30rem;
+    padding:4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex:1 1 45rem;
+    padding:2rem;
+    margin:2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding:1.5rem;
+    margin:1rem 0;
+    background:#3333;
+    color:#fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width:100%;
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color:#fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color:#eee;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+}
+
+.top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}

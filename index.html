@@ -6,47 +6,50 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Profile</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 <header>
     <div class="wrapper">
         <nav>
-            <div class="logo">A</div>
+            <div class="logo">AS</div>
             <ul>
                 <li>
-                    <a href="">Home</a>
+                    <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="">About Me</a>
+                    <a href="#">About Me</a>
                 </li>
                 <li>
-                    <a href="">Education</a>
+                    <a href="#">Education</a>
                 </li>
                 <li>
-                    <a href="">Skills</a>
+                    <a href="#">Skills</a>
                 </li>
                 <li>
-                    <a href="">Projects</a>
+                    <a href="#">Projects</a>
                 </li>
                 <li>
-                    <a href="">Contact Me</a>
+                    <a href="#">Contact Me</a>
                 </li>
             </ul>
         </nav>
         <!--   end nav         -->
 
-        <div class="my"></div>
-        <div class="leftphoto">
-            <img src="assets/images/Myphoto.png" alt="">
-        </div>
-        <div class="center">
-            <h1>Hello, <br> I’m Asiri Sandakelum</h1>
-            <p>I am a Software Developer and a Student of Institute of <br>Software Ingineering.</p>
-        </div>
-        <div class="rightphoto">
-            <img src="assets/images/rightcom.png" alt="">
+        <div class="my-sec">
+            <div class="leftphoto">
+                <img src="assets/images/Myphoto1.png" alt="">
+            </div>
+
+            <div class="center">
+                <h1>Hello, <br/>
+                    I’m Asiri Sandakelum
+                </h1>
+                <p>I am a Software Developer and a Student of Institute of Software Engineering.</p>
+            </div>
+            <div class="rightphoto">
+                <img src="assets/images/rightcom.png" alt="">
+            </div>
         </div>
     </div>
 </header>
@@ -58,8 +61,8 @@
         <p>I am a Software Developer and a Student of Institute of Software Ingineering. I enjoy creating softwares and UI/UX designs. I’m passionate about bringing both technical and visual aspect of digital product to life. I’m
             Currently working on Improving my skills in, and understanding JavaScript and HTML.</p>
         <img src="assets/images/Line1.png">
-
     </section>
+
     <div class="name">
         <p>Name : Asiri Sandakelum</p>
     </div>
@@ -75,44 +78,52 @@
     <div class="Phone">
         <p>Phone : 077-5675324</p>
     </div>
-    <a href="#" class="dlcvbtn">Download CV</a>
+    <a href="#" class="btn cv">Download CV</a>
 
 </div>
 <!--end of about me-->
 <section class="edu">
     <div class="wrapper">
-        <h1>Education</h1>
+        <h2>Education</h2>
         <div class="edu-card">
             <div class="pri">
-                2004-2009
-                <h2>Primary Education</h2>
-                <p>kamburawala college</p>
+                <div class="content">
+                    2004-2009
+                    <h3>Primary Education</h3>
+                    <p>kamburawala college</p>
+                </div>
 
             </div>
         </div>
         <div class="edu-card">
             <div class="high">
-                <h2>Higher Education</h2>
-                <p>C.W.W. Kannanger Central college</p>
-                2004-2009
+                <div class="content">
+                    <h3>Higher Education</h3>
+                    <p>C.W.W. Kannanger Central college</p>
+                    2004-2009
+                </div>
 
             </div>
         </div>
         <div class="edu-card">
             <div class="ccel">
-                2017-2018
-                <h2>CCEL in English</h2>
-                <p>IHRA-University Of Colombo</p>
+                <div class="content">
+                    2017-2018
+                    <h3>CCEL in English</h3>
+                    <p>IHRA-University Of Colombo</p>
+                </div>
 
             </div>
         </div>
         <div class="edu-card">
             <div class="ijse">
+                <div class="content">
 
-                <h2>GDSE</h2>
-                <p>Institute Of Software<br>
-                    Engineering - Panadura</p>
-                2004-2009
+                    <h3>GDSE</h3>
+                    <p>Institute Of Software<br>
+                        Engineering - Panadura</p>
+                    2004-2009
+                </div>
             </div>
         </div>
     </div>
@@ -177,41 +188,45 @@
             </div>
         </div>
 
-        <a href="#" class="btnmore">View More</a>
+        <a href="#" class="btn view">View More</a>
     </div>
 </section>
 <!--end of projects-->
 
 <section class="contact" id="contact">
+    <div class="wrapper">
 
-    <h1 class="heading"> <span>contact</span> me </h1>
+        <h1 class="heading"> <span>contact</span> me </h1>
 
-    <div class="row">
+        <div class="row">
 
-        <div class="content">
+            <div class="content">
 
-            <h3 class="title">contact info</h3>
+                <h3 class="title">contact info</h3>
 
-            <div class="info">
-                <h3> <i class="fas fa-envelope"></i> sadakelum1234@gmail.com </h3>
-                <h3> <i class="fas fa-phone"></i> 077-5675324 </h3>
-                <h3> <i class="fas fa-map-marker-alt"></i> Matugama, Sri Lanka </h3>
+                <div class="info">
+                    <h3> <i class="fas fa-envelope"></i> sadakelum1234@gmail.com </h3>
+                    <h3> <i class="fas fa-phone"></i> 077-5675324 </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> Matugama, Sri Lanka </h3>
+                </div>
+
             </div>
 
+            <form action="">
+
+
+                <input type="text" placeholder="Name" class="box">
+                <input type="email" placeholder="E-mail" class="box">
+                <input type="text" placeholder="Subject" class="box">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
+                <button type="submit" class="btn ma"> Send Massage <i class="fas fa-paper-plane"></i> </button>
+
+            </form>
+
         </div>
-
-        <form action="">
-
-
-            <input type="text" placeholder="Name" class="box">
-            <input type="email" placeholder="E-mail" class="box">
-            <input type="text" placeholder="Subject" class="box">
-            <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
-            <button type="submit" class="btn"> Send Massage <i class="fas fa-paper-plane"></i> </button>
-
-        </form>
-
     </div>
+
+
 
 </section>
 

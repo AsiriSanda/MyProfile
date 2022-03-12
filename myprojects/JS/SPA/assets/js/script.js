@@ -1,22 +1,22 @@
 // Hide Item & Order
-document.getElementById("itemPage").style.setProperty("display","none","important");
-document.getElementById("orderContent").style.setProperty("display","none","important");
+document.getElementById("ManageItemPage").style.setProperty("display","none","important");
+document.getElementById("PlaceOrderPage").style.setProperty("display","none","important");
 
 // ClickEvents
-document.getElementById("customerId").addEventListener("click",function (){
-    document.getElementById("customerPage").style.setProperty("display","block","important");
-    document.getElementById("itemPage").style.setProperty("display","none","important");
-    document.getElementById("orderContent").style.setProperty("display","none","important");
+document.getElementById("HomeBtn").addEventListener("click",function (){
+    document.getElementById("ManageCustomePage").style.setProperty("display","block","important");
+    document.getElementById("ManageItemPage").style.setProperty("display","none","important");
+    document.getElementById("PlaceOrderPage").style.setProperty("display","none","important");
 });
 
-document.getElementById("itemId").addEventListener("click",function (){
-    document.getElementById("itemPage").style.setProperty("display","block","important");
-    document.getElementById("customerPage").style.setProperty("display","none","important");
-    document.getElementById("orderContent").style.setProperty("display","none","important");
+document.getElementById("ItemsBtn").addEventListener("click",function (){
+    document.getElementById("ManageItemPage").style.setProperty("display","block","important");
+    document.getElementById("ManageCustomePage").style.setProperty("display","none","important");
+    document.getElementById("PlaceOrderPage").style.setProperty("display","none","important");
 });
 
-document.getElementById("orderId").addEventListener("click",function (){
-    document.getElementById("orderContent").style.setProperty("display","block","important");
-    document.getElementById("itemPage").style.setProperty("display","none","important");
-    document.getElementById("customerPage").style.setProperty("display","none","important");
+document.getElementById("OrdersBtn").addEventListener("click",function (){
+    document.getElementById("PlaceOrderPage").style.setProperty("display","block","important");
+    document.getElementById("ManageItemPage").style.setProperty("display","none","important");
+    document.getElementById("ManageCustomePage").style.setProperty("display","none","important");
 });

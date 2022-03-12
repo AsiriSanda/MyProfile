@@ -1,4 +1,4 @@
-// Hide Item & Order
+// Hide ItemDTO & Order
 document.getElementById("ManageItemPage").style.setProperty("display","none","important");
 document.getElementById("PlaceOrderPage").style.setProperty("display","none","important");
 

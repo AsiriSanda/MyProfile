@@ -1,8 +1,6 @@
-//SaveOrUpdate Functions ...(Customer) Need To redesign
 clearValidation();
 
 $("#btnSaveOrUpdate").click(function () {
-    //gather customer information
     let customerID = $("#txtCusID").val();
     let customerName = $("#txtCusName").val();
     let customerAddress = $("#txtCusAddress").val();
@@ -14,7 +12,7 @@ $("#btnSaveOrUpdate").click(function () {
     }
     let index=isExists(customerID);
     if(index!=-1){
-        alert("Customer Updated");
+        alert("CustomerDTO Updated");
         customer[index].setCustomerName(customerName);
         customer[index].setCustomerAddress(customerAddress);
         customer[index].setCustomerTelephone(customerTP);
@@ -22,46 +20,44 @@ $("#btnSaveOrUpdate").click(function () {
         bindEvent();
         return;
     }
-    //Add To DB..
-    let c1=new Customer(customerID,customerName,customerAddress,customerTP);
+
+    let c1=new CustomerDTO(customerID,customerName,customerAddress,customerTP);
     customer.push(c1);
     loadAllCustomers();
     bindEvent();
     clearFieldsCus();
 });
 
-//Search Function Search bar..
+
 $("#btnSearch").click(function () {
-    //gather Address Or ID
     let property=$("#srcCusID").val();
     let index=isExists(property,property);
     if(index!=-1){
-        alert("Customer Found");
+        alert("CustomerDTO Found");
         $("#txtCusID").val(customer[index].getCustomerID());
         $("#txtCusName").val(customer[index].getCustomerName());
         $("#txtCusAddress").val(customer[index].getCustomerAddress());
         $("#txtCusTP").val(customer[index].getCustomerTelephone());
         return;
     }
-    alert("Customer Not Found");
+    alert("CustomerDTO Not Found");
 });
 
-//Delete Function ..
 $("#btnDelete").click(function () {
     let customerID=$("#txtCusID").val();
     let index=isExists(customerID);
     if(index!=-1){
         customer.splice(index,1);
         loadAllCustomers();
-        alert("Customer "+customerID+" Deleted");
+        alert("CustomerDTO "+customerID+" Deleted");
         clearFieldsCus();
         return;
     }
-    alert("No Customer Found");
+    alert("No CustomerDTO Found");
 });
 
 function clearFieldsCus() {
-    $("#txtCusID").val('');
+    $("#txtCusID").val("");
     $("#txtCusName").val('');
     $("#txtCusAddress").val('');
     $("#txtCusTP").val('');
@@ -91,7 +87,6 @@ function loadAllCustomers() {
 
 }
 function bindEvent() {
-    //bind the event after the row was added
     $("#customerTable>tr").off("click");
     $("#customerTable>tr").click(function(){
         let Row=$(this);
@@ -99,7 +94,8 @@ function bindEvent() {
         let CustomerName = $(Row.children().get(1)).text();
         let CustomerAddress = $(Row.children().get(2)).text();
         let CustomerTP = $(Row.children().get(3)).text();
-        //Assignment
+
+
         $("#txtCusID").val(CustomerID);
         $("#txtCusName").val(CustomerName);
         $("#txtCusAddress").val(CustomerAddress);
@@ -114,8 +110,8 @@ function clearValidation() {
     $("#validationTextTp").css('display','none');
 }
 
-//Validation-Customer.Id
-let RegExCusID=/^(C00-)[0-9]{3,4}$/;
+//CustomerDTO Id validation
+let RegExCusID=/^(C-)[0-9]{1,4}$/;
 $("#txtCusID").keyup(function () {
     if($("#txtCusID").val()==''){
         $("#validationTextId").css('display','none');
@@ -132,7 +128,7 @@ $("#txtCusID").keyup(function () {
         $("#validationTextId").css('display','block');
     }
 });
-//Validation-Customer.Name
+//customer name validate
 let RegExCusName=/^[A-z]{5,10}$/;
 $("#txtCusName").keyup(function () {
     if($("#txtCusName").val()==''){
@@ -151,8 +147,8 @@ $("#txtCusName").keyup(function () {
     }
 });
 
-//Validation-Customer.address
-let RegExCusAddress=/^(No.)[0-9]{2} [A-z]{4,100}$/;
+//Validation-CustomerDTO.address
+let RegExCusAddress=/^[A-z]{3,10}$/;
 $("#txtCusAddress").keyup(function () {
     if($("#txtCusAddress").val()==''){
         $("#validationTextAddress").css('display','none');
@@ -170,7 +166,7 @@ $("#txtCusAddress").keyup(function () {
     }
 });
 
-//Validation-Customer.TP
+//Tphone number validate
 let RegExCusTP=/^(07)[0-9]{8,9}$/;
 $("#txtCusTP").keyup(function () {
     if($("#txtCusTP").val()==''){

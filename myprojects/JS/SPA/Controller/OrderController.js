@@ -1,4 +1,4 @@
-//Search Customer And Fill..
+//Search CustomerDTO And Fill..
 $("#btnSearchCus").click(function () {
     if($("#txtCusIDForSearch").val()==''){
         alert("Please Add Data to Search");
@@ -18,7 +18,7 @@ $("#btnSearchItem").click(function () {
 //Fill Table With Items..
 let tempTotal=0;
 $("#btnAddItem").click(function () {
-    //Logic For Add Item To Table.
+    //Logic For Add ItemDTO To Table.
     let ItemTot=$("#txtItemPriceResult").val() * $("#txtQtyForAdd").val();
     tempTotal=tempTotal+ItemTot;
     let rowItem = `<tr><td>${$("#txtItemCodeForSearch").val()}</td><td>${$("#txtItemNameResult").val()}</td><td>${$("#txtItemPriceResult").val()}</td><td>${$("#txtQtyForAdd").val()}</td><td>${ItemTot}</td></tr>`;
@@ -49,7 +49,7 @@ function searchCustomerById(id) {
 }
 
 //Validation Order.Id
-let RegExOrderId=/^O[0-9]{2}-[0-9]{3}$/;
+let RegExOrderId=/^(O-)[0-9]{1,4}$/;
 $("#txtOrderId").keyup(function () {
     if($("#txtOrderId").val()==''){
         $("#txtOrderId").css('border','1px solid #ced4da');
@@ -80,8 +80,8 @@ $("#txtOrderDate").keyup(function () {
     }
 });
 
-//Validation Order.Customer
-let RegExCusIdForSearch=/^(C00-)[0-9]{3,4}$/;
+//Validation Order.CustomerDTO
+let RegExCusIdForSearch=/^(C-)[0-9]{1,4}$/;
 $("#txtCusIDForSearch").keyup(function () {
     if($("#txtCusIDForSearch").val()==''){
         $("#txtCusIDForSearch").css('border','1px solid #ced4da');
@@ -99,8 +99,8 @@ $("#txtCusIDForSearch").keyup(function () {
     }
 });
 
-//Validation Order.Item
-let RegExItemIdForSearch=/^(I00-)[0-9]{3,4}$/;
+//Validation Order.ItemDTO
+let RegExItemIdForSearch=/^(I-)[0-9]{1,4}$/;
 $("#txtItemCodeForSearch").keyup(function () {
     if($("#txtItemCodeForSearch").val()==''){
         $("#txtItemCodeForSearch").css('border','1px solid #ced4da');

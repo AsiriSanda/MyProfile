@@ -1,7 +1,6 @@
-//SaveOrUpdate Functions ...(Item) Need To redesign
 clearItemValidation();
 $("#itemSaveOrUpdate").click(function () {
-    //gather customer information
+
     let itemID = $("#txtItemCode").val();
     let itemName = $("#txtItemName").val();
     let itemQty= $("#txtItemQty").val();
@@ -13,7 +12,7 @@ $("#itemSaveOrUpdate").click(function () {
     }
     let index=isItemExists(itemID);
     if(index!=-1){
-        alert("Item Updated");
+        alert("ItemDTO Updated");
         item[index].setItemName(itemName);
         item[index].setItemQty(itemQty);
         item[index].setItemPrice(itemPrice);
@@ -21,45 +20,44 @@ $("#itemSaveOrUpdate").click(function () {
         bindEventItemTable();
         return;
     }
-    //Add To DB..
-    let i1=new Item(itemID,itemName,itemQty,itemPrice);
+
+
+    let i1=new ItemDTO(itemID,itemName,itemQty,itemPrice);
     item.push(i1);
     loadAllItem();
     bindEventItemTable();
     clearFields();
 });
 
-//Search Function Search bar..
+
+
 $("#btnItemSearch").click(function () {
-    //gather Address Or ID
     let property=$("#srcItemProperty").val();
     let index=isItemExists(property);
     if(index!=-1){
-        alert("Item Found");
+        alert("ItemDTO Found");
         $("#txtItemCode").val(item[index].getItemCode());
         $("#txtItemName").val(item[index].getItemName());
         $("#txtItemQty").val(item[index].getItemQty());
         $("#txtItemPrice").val(item[index].getItemPrice());
         return;
     }
-    alert("Item Not Found");
+    alert("ItemDTO Not Found");
 });
 
-//Delete Function ..
 $("#itemDelete").click(function () {
     let itemID=$("#txtItemCode").val();
     let index=isItemExists(itemID);
     if(index!=-1){
         item.splice(index,1);
         loadAllItem();
-        alert("Item "+itemID+" Deleted");
+        alert("ItemDTO "+itemID+" Deleted");
         clearFields();
         return;
     }
-    alert("No Item Found");
+    alert("No ItemDTO Found");
 });
 
-//clear Fields
 function clearFields() {
     $("#txtItemCode").val('');
     $("#txtItemName").val('');
@@ -76,7 +74,7 @@ function isItemExists(id){
     }
     return x;
 }
-//Update From Here..
+
 function loadAllItem() {
     $("#itemTable>tr").remove();
     for(let i=0;i<item.length;i++){
@@ -89,7 +87,6 @@ function loadAllItem() {
     }
 }
 function bindEventItemTable() {
-    //bind the event after the row was added
     $("#itemTable>tr").off("click");
     $("#itemTable>tr").click(function(){
         let Row=$(this);
@@ -113,27 +110,7 @@ function clearItemValidation() {
     $("#validationTextSrcBar").css('display','none');
 }
 
-//Validation For A Search Bar
-let RegExSearchBar=/^(I00-)[0-9]{3,4}$/;
-$("#srcItemProperty").keyup(function () {
-    if($("#srcItemProperty").val()==''){
-        $("#validationTextSrcBar").css('display','none');
-        $("#srcItemProperty").css('border','1px solid #ced4da');
-        return;
-    }
-    let input =$("#srcItemProperty").val();
-    if(RegExItemID.test(input)){
-        $("#srcItemProperty").css('border','2px solid green');
-        $("#validationTextSrcBar").css('display','none');
-    }
-    else{
-        $("#srcItemProperty").css('border','2px solid red');
-        $("#validationTextSrcBar").css('display','block');
-    }
-});
-
-//Validation-Item.Id
-let RegExItemID=/^(I00-)[0-9]{3,4}$/;
+let RegExItemID=/^(I-)[0-9]{1,4}$/;
 $("#txtItemCode").keyup(function () {
     if($("#txtItemCode").val()==''){
         $("#validationTextItemId").css('display','none');
@@ -151,7 +128,7 @@ $("#txtItemCode").keyup(function () {
     }
 });
 
-//Validation-Item.Name
+//ItemDTO Validation
 let RegExItemName=/^[A-z]{4,100}$/;
 $("#txtItemName").keyup(function () {
     if($("#txtItemName").val()==''){
@@ -170,7 +147,7 @@ $("#txtItemName").keyup(function () {
     }
 });
 
-//Validation-Item.Qty
+//ItemDTO.Qty Validation-
 let RegExItemQty=/^[0-9]{1,5}$/;
 $("#txtItemQty").keyup(function () {
     if($("#txtItemQty").val()==''){
@@ -189,11 +166,11 @@ $("#txtItemQty").keyup(function () {
     }
 });
 
-//Validation-Item.Price
-let RegExItemPrice=/^[0-9]{1,9}(.)[0-9]{2}$/;
+//ItemDTO.Price Validation-
+let RegExItemPrice=/^[0-9]{1,5}/;
 $("#txtItemPrice").keyup(function () {
     if($("#txtItemPrice").val()==''){
-        $("#validationTextItemQty").css('display','none');
+        $("#validationTextItemPrice").css('display','none');
         $("#txtItemPrice").css('border','1px solid #ced4da');
         return;
     }
@@ -204,6 +181,6 @@ $("#txtItemPrice").keyup(function () {
     }
     else{
         $("#txtItemPrice").css('border','2px solid red');
-        $("#validationTextItemQty").css('display','block');
+        $("#validationTextItemPrice").css('display','block');
     }
 });

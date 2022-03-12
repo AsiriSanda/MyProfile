@@ -4,11 +4,23 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
 body{
     margin: 0;
     font-family: "Roboto", sans-serif;
     background: rgba(33, 33, 33, 0.82);
+    overflow-x: hidden;
 }
+
+section{
+    padding:1rem;
+    margin-top: 60px;
+}
+
 
 .wrapper{
     max-width: 1282px;
@@ -16,7 +28,6 @@ body{
 }
 
 header{
-
     height: 100vh;
     width: 100%;
 }
@@ -53,7 +64,7 @@ nav ul li a{
     color: #ffffff;
 }
 
-.my-sec{
+.home{
     display: flex;
     height: 100vh;
     width: 100%;
@@ -61,19 +72,19 @@ nav ul li a{
     justify-content: space-between;
 }
 
-.my-sec .center{
+.home .center{
     padding-left: 31px;
     padding-right: 60px;
 }
 
-.my-sec .center h1 {
+.home .center h1 {
     font-weight: 800;
     font-size: 36px;
     line-height: 42px;
     color: #FFFFFF;
 }
 
-.my-sec .center p {
+.home .center p {
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -81,13 +92,9 @@ nav ul li a{
     margin-bottom: 30px;
 }
 
-.my-sec .rightphoto img{
+.home .rightphoto img{
     height: 500px;
     padding-top: 46px;
-}
-
-section{
-    margin-top: 60px;
 }
 
 h2{
@@ -123,8 +130,6 @@ h2{
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 500;
-    position: absolute;
-
 }
 
 .email p{
@@ -132,6 +137,10 @@ h2{
     font-size: 24px;
     font-weight: 500;
     text-align: right;
+    position: relative;
+    bottom: 10px;
+    right: 200px;
+    top: -150px;
 
 }
 
@@ -140,26 +149,160 @@ h2{
     font-size: 24px;
     font-weight: 500;
     text-align: right;
-    top: 0;
+    position: relative;
+    bottom: 10px;
+    right: 363px;
+    top: -150px;
 
 }
 
-.edu-card{
-    position: absolute;
+.edu{
+    height: 100vh;
+    width: 100%;
 }
 
-.edu-card .content{
+.edu-cards .content{
     border-radius: 13px;
     background: #62727B;
     box-shadow: 8px 3px 4px rgba(118, 255, 3, 0.5);
     padding: 8px 32px;
+    color: white;
+}
+
+.edu-cards .edu-card1{
+    position: absolute;
+    right: 100px;
+    bottom: -1300px;
+}
+
+.edu-cards .edu-card2{
+    position: absolute;
+    right: 350px;
+    bottom: -1050px;
+}
+
+.edu-cards .edu-card3{
+    position: absolute;
+    right: 700px;
+    bottom: -1300px;
 
 }
 
-.edu-card.ijse{
-    right: 47%;
-
+.edu-cards .edu-card4{
+    position: absolute;
+    left: 100px;
+    bottom: -1050px;
 }
+
+.greenline{
+    position: absolute;
+    left: 200px;
+    bottom: -1120px;
+}
+
+.skills{
+    height: 100vh;
+    width: 100%;
+}
+
+.skill-cards .content{
+    border-radius: 13px;
+    background: #62727B;
+    box-shadow: 8px 3px 4px rgba(118, 255, 3, 0.5);
+    padding: 8px 32px;
+    color: white;
+}
+
+.skill-cards .skill-card1{
+    position: absolute;
+    left: 150px;
+    bottom: -1800px;
+}
+
+.skill-cards .skill-card2{
+    position: absolute;
+    left: 400px;
+    bottom: -1800px;
+}
+
+.skill-cards .skill-card3{
+    position: absolute;
+    left: 650px;
+    bottom: -1800px;
+}
+
+.skill-cards .skill-card4{
+    position: absolute;
+    left: 950px;
+    bottom: -1800px;
+}
+
+.skill-cards .skill-card5{
+    position: absolute;
+    left: 200px;
+    bottom: -2000px;
+}
+
+.skill-cards .skill-card6{
+    position: absolute;
+    left: 500px;
+    bottom: -2000px;
+}
+
+.skill-cards .skill-card7{
+    position: absolute;
+    left: 800px;
+    bottom: -2000px;
+}
+
+.projects{
+    height: 100vh;
+    width: 100%;
+}
+
+.project-card1{
+    position: absolute;
+    left: 100px;
+    bottom: -2600px;
+}
+
+.project-card2{
+    position: absolute;
+    left: 500px;
+    bottom: -2600px;
+}
+
+.project-card3{
+    position: absolute;
+    left: 900px;
+    bottom: -2600px;
+}
+
+.assignments{
+    height: 100vh;
+    width: 100%;
+}
+
+.assignment-card1{
+    position: absolute;
+    left: 100px;
+    bottom: -3300px;
+}
+
+.assignment-card2{
+    position: absolute;
+    left: 500px;
+    bottom: -3300px;
+}
+
+.assignment-card3{
+    position: absolute;
+    left: 900px;
+    bottom: -3300px;
+}
+
+
+
 
 
 .btn{
@@ -184,6 +327,19 @@ h2{
 .btn.view{
     font-size: 18px;
     font-weight: bold;
+    position: absolute;
+    left: 630px;
+    bottom: -2800px;
+
+}
+
+.btn.assign{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    left: 630px;
+    bottom: -3400px;
+
 }
 
 .btn.ma{
@@ -191,19 +347,6 @@ h2{
     font-weight: bold;
 }
 
-html{
-    overflow-x: hidden;
-}
-
-
-
-body{
-    overflow-x: hidden;
-}
-
-section{
-    padding:1rem;
-}
 
 .contact .row{
     display: flex;

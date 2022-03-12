@@ -29,7 +29,7 @@
 
 ## :link: **Links**
 - Website : [asiri sandakelum](https://myprofileasiri.000webhostapp.com/)
-- GitHub-Pages : [asiriSanda.github](https://github.com/AsiriSanda)
+- GitHub-Pages : [asiriSanda.github](https://asirisanda.github.io/MyProfile/)
 - Site Map : [Click Here](https://www.gloomaps.com/izdjoWKVt2 )
 - Wireframe : [Click Here](https://wireframe.cc/VX6jQN)
 - Mockup : [Click Here](https://www.figma.com/file/9GeLLRAwmFVEWmOkeyV0HB/Asiri-Sandakelum?node-id=0%3A1)

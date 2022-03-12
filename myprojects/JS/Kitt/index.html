@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitt</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <style>
+
+        body>section:nth-child(1){
+            display: flex;
+            margin-left: 300px;
+            margin-top: 250px;
+        }
+        body>section>div{
+            border: 1px solid black;
+            width: 115px;
+            height: 40px;
+        }
+        body>section:nth-child(2){
+            display: flex;
+            margin-left: 520px;
+            margin-top: 20px;
+        }
+        body>section:nth-child(2)>button{
+            width: 80px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+</section>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+        var colorArray = ["#ff0000", "#ff3333", "#ff5c5c", "#ff7575", "#ff9999"];
+        var idArray = [$("#d1"), $("#d2"), $("#d3"), $("#d4"), $("#d5")];
+        var interval=300;
+
+        function clearColor() {
+            for (var i = 0; i < idArray.length; i++) {
+                idArray[i].css("background-color", "white");
+            }
+        }
+        let time;
+        var i= 0;
+        function forward() {
+            clearColor();
+            idArray[i].css("background-color", colorArray[0]);
+            if(i==1){
+                idArray[1].css("background-color", colorArray[1]);
+                idArray[0].css("background-color", colorArray[2]);
+            }
+            if(i==2){
+                idArray[2].css("background-color", colorArray[1]);
+                idArray[1].css("background-color", colorArray[2]);
+                idArray[0].css("background-color", colorArray[3]);
+            }
+            if(i==3){
+                idArray[2].css("background-color", colorArray[1]);
+                idArray[1].css("background-color", colorArray[2]);
+                idArray[0].css("background-color", colorArray[3]);
+            }
+            if(i==4){
+                idArray[3].css("background-color", colorArray[1]);
+                idArray[2].css("background-color", colorArray[2]);
+                idArray[1].css("background-color", colorArray[3]);
+                idArray[0].css("background-color", colorArray[4]);
+            }
+            i++;
+            if (i == 5) {
+                i=0;
+                clearInterval(time2);
+                time = setInterval(backward,interval);
+            }
+        }
+
+
+        x = 4
+        function backward() {
+            clearColor();
+            idArray[x].css("background-color", colorArray[0]);
+            if(x==3){
+                idArray[4].css("background-color", colorArray[1]);
+            }
+            if(x==2){
+                idArray[4].css("background-color", colorArray[2]);
+                idArray[3].css("background-color", colorArray[1]);
+            }
+            if(x==1){
+                idArray[4].css("background-color", colorArray[3]);
+                idArray[3].css("background-color", colorArray[2]);
+                idArray[2].css("background-color", colorArray[1]);
+            }
+            if(x==0){
+                idArray[4].css("background-color", colorArray[4]);
+                idArray[3].css("background-color", colorArray[3]);
+                idArray[2].css("background-color", colorArray[2]);
+                idArray[1].css("background-color", colorArray[1]);
+            }
+            x--;
+            if (x == -1) {
+                x=4;
+                clearInterval(time);
+                start();
+            }
+        }
+        function start() {
+            time2 = setInterval(forward, interval);
+        }
+        let time2 = setInterval(forward, interval);
+
+</script>
+</body>
+</html>

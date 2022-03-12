@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Que</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <style>
+
+        body > section > section{
+            display: flex;
+            height: 40px;
+            margin-left: 300px;
+        }
+        body > section > div:nth-child(1){
+            border: 2px solid black;
+            width: 100px;
+            height: 40px;
+            margin-left: 150px;
+            margin-top: 140px;
+        }
+        body > section > div:nth-child(5){
+            border: 2px solid black;
+            width: 100px;
+            height: 40px;
+            margin-left: 800px;
+            margin-top: 15px;
+        }
+        body > section > section > div{
+            border: 2px solid black;
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div id="d1"> </div>
+
+    <hr>
+    <section>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div>
+        <div id="d5"></div>
+    </section>
+
+    <hr>
+
+    <div id="d6"></div>
+</section>
+
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+
+<script>
+    var ids=[ $("#d1"), $("#d2"), $("#d3"), $("#d4"), $("#d5"), $("#d6")];
+    var colors=["red","blue","orange","Yellow","magenta","pink"];
+
+    function make() {
+        var one=colors[0];
+        var two=colors[1];
+        var three=colors[2];
+        var four=colors[3];
+        var five=colors[4];
+        var six=colors[5];
+        colors=[six,one,two,three,four,five];
+        console.log(colors);
+    }
+    function set(){
+        make();
+        ids[0].css("backgroundColor",colors[0]);
+        ids[1].css("backgroundColor",colors[1]);
+        ids[2].css("backgroundColor",colors[2]);
+        ids[3].css("backgroundColor",colors[3]);
+        ids[4].css("backgroundColor",colors[4]);
+        ids[5].css("backgroundColor",colors[5]);
+    }
+
+    setInterval(set,1000);
+</script>
+
+</body>
+</html>

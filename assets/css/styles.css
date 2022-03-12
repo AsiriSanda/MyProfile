@@ -30,6 +30,9 @@ section{
 header{
     height: 100vh;
     width: 100%;
+    display: inline-block;
+    transition: 300ms;
+;
 }
 
 nav{
@@ -62,6 +65,27 @@ nav ul li a{
     font-size: 24px;
     text-decoration: none;
     color: #ffffff;
+}
+
+.leftphoto img{
+    transition: 300ms;
+    position: relative;
+    z-index: 100;
+}
+
+.leftphoto img:hover{
+    transform: rotate(6deg);
+}
+
+.leftphoto .photo-bg{
+    position: absolute;
+    width: 339.65px;
+    height: 339.65px;
+    left: 34px;
+    top: 146px;
+
+    background: #76FF03;
+    transform: rotate(3.55deg);
 }
 
 .home{
@@ -317,12 +341,19 @@ h2{
     text-decoration: none;
 }
 
+.btn:hover{
+    background-color: #4aa300;
+    transform: translateY(-8px);
+}
+
 .btn.cv{
     font-size: 30px;
     font-weight: 600;
     position: relative;
     right: -470px;
 }
+
+
 
 .btn.view{
     font-size: 18px;

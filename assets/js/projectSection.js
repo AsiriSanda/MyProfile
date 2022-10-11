@@ -18,14 +18,14 @@ const projects = [
     github: "https://github.com/AsiriSanda/sipsewana_orm",
     type: "standalone",
     icon: "./assets/images/images/ss.JPG",
-     },
+  },
 
   {
     title: "POS-Layered Architecture",
     github: "https://github.com/AsiriSanda/Supermarket_layerd",
     type: "standalone",
-    icon: "./assets/images/images/sm.JPG",
-    },
+    icon: "./assets/images/images/sm.jpg",
+  },
 
   {
     title: "Car Rental Spring",
@@ -87,12 +87,12 @@ function changeProjects(type) {
 
 let scroll = 0;
 
-function rightScrollButtonClicked(){
+function rightScrollButtonClicked() {
 
-    if (!(projectItemsContainer.width()<scroll)){
-      scroll += 500;
-      projectItemsContainer.scrollLeft(scroll);
-    }
+  if (!(projectItemsContainer.width() < scroll)) {
+    scroll += 500;
+    projectItemsContainer.scrollLeft(scroll);
+  }
 
 }
 

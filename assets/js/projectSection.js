@@ -17,20 +17,20 @@ const projects = [
     title: "Student Management System",
     github: "https://github.com/AsiriSanda/sipsewana_orm",
     type: "standalone",
-    icon: "./assets/images/images/ss.jpg",
+    icon: "./assets/images/images/ss.JPG",
      },
 
   {
     title: "POS-Layered Architecture",
     github: "https://github.com/AsiriSanda/Supermarket_layerd",
     type: "standalone",
-    icon: "./assets/images/images/sm.jpg",
+    icon: "./assets/images/images/sm.JPG",
     },
 
   {
     title: "Car Rental Spring",
     github: "https://github.com/AsiriSanda/Car-Rental-System",
-    icon: "./assets/images/images/cs.jpg",
+    icon: "./assets/images/images/cs.JPG",
 
   },
 

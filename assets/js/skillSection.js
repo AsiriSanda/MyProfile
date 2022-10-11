@@ -9,7 +9,7 @@ function skillViewComponent(skill) {
   console.log(typeof skill.rating);
 
   for (var i = 0; i < skill.rating; i++) {
-    console.log("i"+i);
+    console.log("i" + i);
     ratingCreated = ratingCreated + `<div class="ratingCircles rated"></div>`;
   }
 
@@ -35,9 +35,9 @@ function skillViewComponent(skill) {
                 </div>`;
 }
 
-function createCom () {
-  const ab=  [{
-    heading : 'HEAding'
+function createCom() {
+  const ab = [{
+    heading: 'HEAding'
   }];
 
   cardContainer.append(abd(ab[0]));
@@ -45,8 +45,8 @@ function createCom () {
 }
 
 
-function abd (object) {
-  return(
+function abd(object) {
+  return (
     `<div>
                 <h1>${object.heading}</h1>
             </div>`
@@ -59,7 +59,7 @@ const skills = [
     projects: 6,
     rating: 4,
     imageUrl: "./assets/images/images/Java.png"
-    },
+  },
   {
     title: "JavaScript",
     projects: 6,
@@ -94,7 +94,7 @@ const skills = [
   },
 
 
- 
+
   {
     title: "Spring-Boot",
     projects: 6,

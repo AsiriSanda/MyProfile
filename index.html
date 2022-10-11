@@ -1,289 +1,189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+
+    <head>
+        <link rel="stylesheet" href="./assets/style/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Asiri Sandakelum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./assets/style/headingSection.css">
+        <link rel="stylesheet" href="./assets/style/aboutMeSection.css">
+        <link rel="stylesheet" href="./assets/style/educationSection.css">
+        <link rel="stylesheet" href="./assets/style/skillsAndFrameworks.css">
+    </head>
+
 <body>
-<header>
-    <div class="wrapper">
 
-        <!--    nav         -->
+    <html lang="en" dir="ltr">
+
+    <body>
         <nav>
-            <div class="logo">AS</div>
-            <ul>
-                <li>
-                    <a href="#Home">Home</a>
-                </li>
-                <li>
-                    <a href="#Aboutme">About Me</a>
-                </li>
-                <li>
-                    <a href="#Edu">Education</a>
-                </li>
-                <li>
-                    <a href="#Skill">Skills</a>
-                </li>
-                <li>
-                    <a href="#Projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#Assignments">Assignments</a>
-                </li>
-                <li>
-                    <a href="#Contact">Contact Me</a>
-                </li>
-
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Asiri</label>
+            <ul id="menuItem">
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">EDUCATION</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
+
         </nav>
-        <!--   end nav         -->
 
-        <!--home-->
-        <div class="home" id="Home">
 
-            <div class="leftphoto">
-                <div class="photo-bg"></div>
-                <img src="assets/images/Myphoto.png" alt="">
+        <main id="particles-js">
 
-            </div>
+            <section id="headingSectionMainParent">
+                <div class="headerHeadingContainer">
+                    <span id="headingOne">Hello,</span><br>
+                    <span id="headingTwo">I’m Asiri Sandakelum</span>
 
-            <div class="center">
-                <h1>Hello, <br/>
-                    I’m Asiri Sandakelum
-                </h1>
-                <p>I am a Software Developer and a Student of Institute of Software Engineering.</p>
-            </div>
-            <div class="rightphoto">
-                <img src="assets/images/rightcom.png" alt="">
-            </div>
-        </div>
-        <!-- end home-->
-    </div>
-</header>
+                </div>
+                <div id="quickDescriptionAboutMe">
+                    <p>I am a Software Developer and a Student of Institute of Software Engineering.</p>
+                </div>
 
-<!--about-->
-<section class="about" id="Aboutme">
-    <div class="wrapper">
-        <section class="about-me">
-            <h2>About me</h2>
-            <p>I am a Software Developer and a Student of Institute of Software Ingineering. I enjoy creating softwares and UI/UX designs. I’m passionate about bringing both technical and visual aspect of digital product to life. I’m
-                Currently working on Improving my skills in, and understanding JavaScript and HTML.</p>
-            <img src="assets/images/Line1.png">
+                <div class="profileImageSlider">
+
+                    <img src="./assets/images/images/Myphoto.png" alt="">
+                    <div class="photo-bg"></div>
+                </div>
+            </section>
+
+            <section class="aboutMeSectionMainParent">
+
+                </div>
+
+                <div id="aboutMeDescription">
+                    <h1>About Me</h1>
+                    <p>
+                        I am a Software Developer and a Student at the Institute of Software Engineering.
+                        I enjoy creating software and UI/UX designs.
+                        I’m passionate about bringing both the technical and visual aspects of digital products to life.
+                        I’m Currently working on Improving my skills in and understanding JavaScript and HTML.
+
+                    </p>
+
+
+                    <a id="downloadCvButton" href ="https://drive.google.com/file/d/1jQBbMGQzcLP7YfrZHT58EjbmQ68d0Ymf/view?usp=sharing" attributes-list download  >DOWNLOAD CV</a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <section id="educationSectionMainParent" class="reveal">
+            <span id="educationMainHeading">Education</span>
+
+            <img src="./assets/images/images/Component%202.png" alt="">
+
         </section>
 
-        <div class="name">
-            <p>Name : Asiri Sandakelum</p>
-        </div>
-        <div class="age">
-            <p>Age : 25</p>
-        </div>
-        <div class="nationality">
-            <p>Nationality : Sri Lankan </p>
-        </div>
-        <div class="email">
-            <p>E-mail : Sadakelum1234@gmail.com</p>
-        </div>
-        <div class="Phone">
-            <p>Phone : 077-5675324</p>
-        </div>
-        <a href="#" class="btn cv">Download CV </a>
-    </div>
-</section>
-<!--end about-->
 
-<!--edu-->
-<section class="edu" id="Edu">
-    <div class="wrapper">
-        <h2>Education</h2>
-        <div class="edu-cards">
-            <div class="edu-card1">
-                <div class="content">
-                    2004-2009
-                    <h3>Primary Education</h3>
-                    <p>kamburawala college</p>
+        <section id="skillsSectionMainParent">
+            <h1 id="skill">Skills</h1>
+
+
+            <div id="cardContainer">
+
+            </div>
+        </section>
+
+        <section id="projectsSectionMainParent">
+            <span id="mainHeading">Projects</span>
+
+            <div id="categoryParent">
+            </div>
+            <div id="projectItemsContainer" class="reveal">
+
+            </div>
+
+            <div id="projectItemControllers">
+
+                <div id="slideCount"></div>
+                <a href="https://github.com/AsiriSanda?tab=repositories" class="btn view">View More</a>
+
+                </div>
+        </section>
+
+        <section id="contactMeSection">
+
+            <img src="./assets/images/images/rightcom.png" alt="">
+
+
+            <div id="socialLinksContainer">
+                <span>Contact Me</span>
+                <div id="social-icons">
+                    <div class="social-icons-background"><a href="https://github.com/AsiriSanda" target="_blank"><img
+                                src="./assets/images/github.png" alt="" width="50px"></a> </div>
+                    <div class="social-icons-background"><a href="https://www.linkedin.com/in/asiri-sandakelum-8a9304226/"><img
+                                src="./assets/images/linkedin.png" alt="" width="50px"></a></div>
+
+                    <div class="social-icons-background"><a href="tel:+(94)778567019"><img
+                                src="./assets/images/call.png" alt="" width="50px"></a>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="edu-card2">
-                <div class="content">
-                    <h3>Higher Education</h3>
-                    <p>C.W.W. Kannanger Central college</p>
-                    2009-2017
-                </div>
-            </div>
+        <script src="assets/js/particles.js"></script>
+        <script src="assets/js/app.js"></script>
 
-            <div class="edu-card3">
-                <div class="content">
-                    2017-2018
-                    <h3>CCEL in English</h3>
-                    <p>IHRA-University Of Colombo</p>
-                </div>
-            </div>
-
-            <div class="edu-card4">
-                <div class="content">
-                    <h3>GDSE</h3>
-                    <p>Institute Of Software Engineering</p>
-                    2020-Present
-                </div>
-            </div>
-
-            <div class="greenline">
-                <img src="assets/images/Linegreeen.png">
-            </div>
-        </div>
-    </div>
-</section>
-<!--end edu-->
-
-<section class="skills" id="Skill">
-    <div class="wrapper">
-        <h2>Skills</h2>
-        <div class="skill-cards">
-            <div class="skill-card1">
-                <div class="content">
-                    <img src="assets/images/Java.png" alt="">
-                </div>
-            </div>
-
-            <div class="skill-card2">
-                <div class="content">
-                    <img src="assets/images/Mysql.png" alt="">
-                </div>
-            </div>
-
-            <div class="skill-card3">
-                <div class="content">
-                    <img src="assets/images/Html.png" alt="">
-                </div>
-            </div>
-
-            <div class="skill-card4">
-                <div class="content">
-                    <img src="assets/images/Hibernate.png" alt="">
-                </div>
-            </div>
-
-            <div class="skill-card5">
-                <div class="content">
-                    <h3>2+</h3>
-                    <p>Years Of Experience</p>
-                </div>
-            </div>
-
-            <div class="skill-card6">
-                <div class="content">
-                    <h3>10+</h3>
-                    <p>Completed Projects</p>
-                </div>
-            </div>
-
-            <div class="skill-card7">
-                <div class="content">
-                    <h3>5+</h3>
-                    <p>Profetional Projects</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!--end of skills-->
-
-<section class="projects" id="Projects">
-    <div class="wrapper">
-        <h2>Projects</h2>
-        <div class="project-cards">
-            <div class="project-card1">
-                <img src="assets/images/Proj1.png" alt="">
-            </div>
-
-            <div class="project-card2">
-                <img src="assets/images/Proj2.png" alt="">
-            </div>
-
-            <div class="project-card3">
-                <img src="assets/images/Proj3.png" alt="">
-            </div>
-        </div>
-
-        <a href="https://github.com/AsiriSanda?tab=repositories" class="btn view">View More</a>
-    </div>
-</section>
-<!--end of projects-->
-
-<section class="assignments" id="Assignments">
-    <div class="wrapper">
-        <h2>Assignments</h2>
-        <div class="assignment-cards">
-            <div class="assignment-card1">
-                <a href="myprojects/CSS/Layouts/Assignment%201/Assignment%201.html">
-                    <img src="assets/images/A1.png" alt="">
-                </a>
-            </div>
-
-            <div class="assignment-card2">
-                <a href="myprojects/CSS/Layouts/Assignment%202/Assignment%202.html">
-                    <img src="assets/images/A2.png" alt="">
-                </a>
-
-            </div>
-
-            <div class="assignment-card3">
-                <a href="myprojects/CSS/Layouts/Assignment%203/Assignment%203.html">
-                    <img src="assets/images/A3.png" alt="">
-                </a>
-            </div>
-        </div>
-
-        <a href="https://github.com/AsiriSanda/MyProfile/tree/master/myprojects" class="btn assign">View More</a>
-    </div>
-</section>
-<!--end of assignments-->
-
-<section class="contact" id="Contact">
-    <div class="wrapper">
-        <h2>Contact Me</h2>
-
-        <div class="row">
-
-            <div class="content">
-
-                <h3 class="title">contact info</h3>
-
-                <div class="info">
-                    <h3> <i class="fas fa-envelope"></i> sadakelum1234@gmail.com </h3>
-                    <h3> <i class="fas fa-phone"></i> 077-5675324 </h3>
-                    <h3> <i class="fas fa-map-marker-alt"></i> Matugama, Sri Lanka </h3>
-                </div>
-
-            </div>
-
-            <form action="">
+        <script>
+            var count_particles, stats, update;
+            stats = new Stats;
+            stats.setMode(0);
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0px';
+            stats.domElement.style.top = '0px';
+            document.body.appendChild(stats.domElement);
+            count_particles = document.querySelector('.js-count-particles');
+            update = function () {
+                stats.begin();
+                stats.end();
+                if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                    // count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+                }
+                requestAnimationFrame(update);
+            };
+            requestAnimationFrame(update);
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="./assets/js/projectSection.js"></script>
+        <script src="./assets/js/skillSection.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="./assets/js/script.js"></script>
 
 
-                <input type="text" placeholder="Name" class="box">
-                <input type="email" placeholder="E-mail" class="box">
-                <input type="text" placeholder="Subject" class="box">
-                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="Message"></textarea>
-                <button type="submit" class="btn ma"> Send Massage <i class="fas fa-paper-plane"></i> </button>
+    </body>
 
-            </form>
-
-        </div>
-    </div>
-
-
-
-</section>
-
-
-
-</body>
-</html>
+    </html>

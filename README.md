@@ -4,7 +4,7 @@
 
 <h3 align="center">Home </h3>
 
-![Home Section Img](assets/images/preview/home.PNG)
+![Home Section Img](assets/images/preview/home.png)
 
 <h3 align="center">About Me</h3>
 
@@ -32,7 +32,6 @@
 - GitHub-Pages : [asiriSanda.github](https://asirisanda.github.io/MyProfile/)
 - Site Map : [Click Here](https://www.gloomaps.com/izdjoWKVt2 )
 - Wireframe : [Click Here](https://wireframe.cc/VX6jQN)
-- Mockup : [Click Here](https://www.figma.com/file/9GeLLRAwmFVEWmOkeyV0HB/Asiri-Sandakelum?node-id=0%3A1)
 
 
 

@@ -1,0 +1,307 @@
+.aboutMeSectionMainParent {
+  margin: 10% 7%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+}
+
+#myImageBlackAndWhite {
+  overflow: hidden;
+}
+
+#myImageBlackAndWhite img {
+  width: 20rem;
+  border-radius: 18px;
+  border: solid white 3px;
+}
+
+#aboutMeDescription {
+  width: 38rem;
+  margin-left: 7rem;
+  color: white;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+#miniDetailsHolder {
+  position: relative;
+}
+
+.miniDetails {
+  z-index: 2;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 18px 2px rgba(109, 213, 136, 0.5);
+  border: #6dd588 solid 1px;
+  background-color: #25252f;
+  position: absolute;
+  padding: 1rem;
+  height: 8vw;
+  width: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#miniDetailsOne {
+  top: 0rem;
+  left: -3rem;
+  animation: move 6s infinite alternate-reverse ease-out;
+  transition: all 900ms;
+}
+
+#miniDetailsTwo {
+  top: 8rem;
+  left: 16rem;
+  animation: moveTwo 5s infinite alternate-reverse ease-out;
+  transition: all 900ms;
+}
+
+#miniDetailsThree {
+  top: 16rem;
+  left: -4rem;
+  animation: moveThree 5s infinite alternate-reverse ease-out;
+  transition: all 900ms;
+}
+
+#miniDetailsOne:hover,
+#miniDetailsOne:focus,
+#miniDetailsTwo:hover,
+#miniDetailsTwo:focus,
+#miniDetailsThree:hover,
+#miniDetailsThree:focus {
+  transform: rotateZ(360deg);
+  transition: all 900ms;
+}
+
+@keyframes move {
+  0% {
+    top: 0rem;
+    left: -3rem;
+  }
+
+  100% {
+    top: -3rem;
+    left: 0rem;
+  }
+}
+
+@keyframes moveTwo {
+  0% {
+    top: 8rem;
+    left: 16rem;
+  }
+
+  100% {
+    top: 11rem;
+    left: 16rem;
+  }
+}
+
+@keyframes moveThree {
+  0% {
+    top: 16rem;
+    left: -4rem;
+  }
+
+  100% {
+    top: 20rem;
+    left: 1rem;
+  }
+}
+
+.miniDetailsHeadingOne {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  display: block;
+}
+
+.miniDetailsHeadingTwo {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+#downloadCvButton {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background: transparent;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: #76FF03 solid 2px;
+  transition: all 500ms;
+}
+
+#downloadCvButton:hover,
+#downloadCvButton:focus {
+  background-color: #76FF03;
+  transition: all 500ms;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .miniDetails {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .miniDetailsHeadingOne {
+    font-size: 0.9;
+    line-height: 0.9;
+  }
+
+  .miniDetailsHeadingTwo {
+    font-size: 0.5rem;
+    line-height: 0.9;
+  }
+
+  #aboutMeDescription {
+    width: 20rem;
+    margin-left: 4rem;
+    font-size: 1rem;
+  }
+
+  #myImageBlackAndWhite img {
+    width: 16rem;
+  }
+
+  #miniDetailsOne {
+    top: 0rem;
+    left: -2rem;
+    animation: none;
+    /* transition: all 900ms; */
+  }
+
+  #miniDetailsTwo {
+    top: 15rem;
+    left: -2.5rem;
+    animation: none;
+    /* transition: all 900ms; */
+  }
+
+  #miniDetailsThree {
+    top: 8rem;
+    left: 13rem;
+    animation: none;
+    /* transition: all 900ms; */
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  #aboutMeDescription {
+    width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #aboutMeDescription {
+    width: 30rem;
+  }
+
+  #myImageBlackAndWhite img {
+    width: 16rem;
+  }
+
+  .miniDetails {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .miniDetailsHeadingOne {
+    font-size: 0.9;
+    line-height: 0.9;
+  }
+
+  .miniDetailsHeadingTwo {
+    font-size: 0.5rem;
+    line-height: 0.9;
+  }
+
+  #miniDetailsOne {
+    top: 0rem;
+    left: -2rem;
+    animation: none;
+    /* transition: all 900ms; */
+  }
+
+  #miniDetailsTwo {
+    top: 15rem;
+    left: -2.5rem;
+    animation: none;
+    /* transition: all 900ms; */
+  }
+
+  #miniDetailsThree {
+    top: 8rem;
+    left: 13rem;
+    animation: none;
+    /* transition: all 900ms; */
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .miniDetails {
+    height: 7rem;
+    width: 7rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #myImageBlackAndWhite{
+      margin-bottom: 0.7rem;
+    }
+
+    .aboutMeSectionMainParent{
+      flex-direction: column;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    #aboutMeDescription {
+      margin-left: 0;
+    }
+
+    #miniDetailsHolder{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-bottom: 1.5rem;
+    }
+
+    .miniDetails{
+      position: static;
+      margin: auto 0.6rem;
+      height: 5rem;
+      width: 5rem;
+    }
+
+    .miniDetailsHeadingOne {
+    font-size: 0.9;
+    line-height: 1;
+  }
+
+  .miniDetailsHeadingTwo {
+    font-size: 0.5rem;
+    line-height: 1;
+  }
+
+}

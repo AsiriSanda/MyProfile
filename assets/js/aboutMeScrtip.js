@@ -1,0 +1,2 @@
+const miniDetailsOne = $("#miniDetailsOne");
+

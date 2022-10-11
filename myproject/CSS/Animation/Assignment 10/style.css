@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 1366px;
+    height: 638px;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
+
+#sky{
+    width: 100%;
+    height: inherit;
+}
+
+.road{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+
+    animation-name: roadAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.city{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 88px;
+    animation-name: roadAnimation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.wheels{
+    position: absolute;
+    width: 100vw;
+    height: 160px;
+    bottom: 40px;
+}
+
+.wheel{
+    width: 91px;
+    position: absolute;
+    bottom: 17px;
+    animation-name: carWheelers;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: normal
+    ;
+}
+
+#front{
+    left: 783px;
+}
+
+#back{
+    left: 477px;
+}
+
+#car{
+    position: absolute;
+    z-index: 5;
+    bottom: 50px;
+    left: 0;
+    margin: auto;
+    right: 0;
+    width: 500px;
+}
+
+@keyframes carWheelers {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(2500deg);
+    }
+}
+
+@keyframes roadAnimation {
+    from{
+        transform: translateX(0px);
+    }
+
+    to{
+        transform: translateX(-2800px);
+    }
+}

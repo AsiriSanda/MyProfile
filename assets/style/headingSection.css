@@ -1,0 +1,143 @@
+#headingSectionMainParent {
+  margin: 3% 10%;
+  background: #232732;
+  border-radius: 15px;
+  /* height: 200px; */
+  box-shadow: 4px 4px 9px 1px rgb(0 0 0 / 30%);
+  border: #76FF03 solid 2px;
+  position: relative;
+}
+
+.headerHeadingContainer span {
+  color: white;
+  line-height: 0.8;
+}
+
+#headingOne {
+  display: inline-block;
+  color: rgba(185, 185, 185, 0.49);
+  margin: 2.5vw 1rem 0 2.5vw;
+  font-size: 2vw;
+  font-family: "Inter", sans-serif;
+}
+
+#headingTwo {
+  font-size: 3vw;
+  font-family: "Open sans", sans-serif;
+  font-weight: 900;
+  margin: 0.6rem 0.3rem 0.6rem 2.5vw;
+}
+/*#headingThree {*/
+/*  font-size: 3vw;*/
+/*  font-family: "Open sans", sans-serif;*/
+/*  font-weight: 900;*/
+/*  margin: 0.6rem 0.3rem 0.6rem 0rem;*/
+/*  color: #47c0a0;*/
+/*}*/
+/*#headingFour {*/
+/*  font-size: 3vw;*/
+/*  font-family: "Open sans", sans-serif;*/
+/*  font-weight: 900;*/
+/*  margin: 0.6rem 0.3rem 0.6rem 2.5vw;*/
+/*}*/
+/*#headingFive {*/
+/*  font-size: 3vw;*/
+/*  font-family: "Open sans", sans-serif;*/
+/*  font-weight: 900;*/
+/*  margin: 0.6rem 0.3rem 0.6rem 0rem;*/
+/*  color: #47c0a0;*/
+/*}*/
+
+#quickDescriptionAboutMe{
+    /* background-color: #9747ff; */
+    margin: 0.8vw auto 0.8vw 2.5vw;
+    color: white;
+    font-family: 'Inter',sans-serif;
+    font-size: 1.5vw;
+    width: 28vw;
+    font-weight: 300;
+}
+
+.socialLinksParent{
+    margin: 0rem 0rem 1vw 2.5vw;
+}
+
+.socialLinksParent img{
+    width: 3vw;
+
+}
+
+.socialLinksParent img:hover{
+    transform: rotateX(360deg);
+    transition: transform 600ms ease-in-out;
+}
+
+.profileImageSlider{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    padding: 1rem;
+    display: flex;
+    justify-content: right;
+}
+
+
+.profileImageSlider img{
+    /* width: 16rem; */
+    filter: drop-shadow(0 0 0.25rem rgba(118, 255, 3)
+);
+    transition: 600ms ease-in-out all;
+
+}
+
+.profileImageSlider img:hover{
+    /*filter: drop-shadow(0 0 0.75rem rgba(151, 71, 255, 0.50));*/
+    transition: 600ms ease-in-out all;
+    transform: rotate(3.55deg);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #headingSectionMainParent{
+
+    }
+
+    #headingOne{
+      font-size: 3vw;
+    }
+
+    #headingTwo, #headingThree, #headingFour, #headingFive{
+      font-size: 6vw;
+    }
+
+    #quickDescriptionAboutMe{
+        width: 17rem;
+        font-size: 2.5vw;
+    }
+
+    #quickDescriptionAboutMe p{
+      margin-bottom: 0.5vw;
+    }
+
+    .socialLinksParent img{
+      width: 5vw;
+    }
+
+    .profileImageSlider{
+      position: relative;
+      align-items: center;
+      padding: 0;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 0.5rem;
+      display: none;
+    }
+
+    .profileImageSlider img{
+      /* display: none; */
+      width: 200px;
+    }
+}

@@ -1,0 +1,89 @@
+#educationSectionMainParent {
+  margin: 2% 10%;
+  /*background-color: #232732;*/
+  border-radius: 20px;
+  padding: 1rem 3rem 3rem 3rem;
+  /* height: 500px; */
+  /*box-shadow: 4px 4px 9px 1px rgb(0 0 0 / 30%);*/
+  /*border: #fe019c solid 2px;*/
+}
+
+#educationMainHeading {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  /* margin: 1.5rem 2rem; */
+  display: inline-block;
+}
+
+#educationSectionMainParent img {
+  width: 100%;
+}
+
+#whatCanIdoSectionMainParent {
+  margin: 6% 8%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#desktopImageContainer {
+  position: relative;
+  /* width: max-content; */
+  width: 50%;
+  height: max-content;
+}
+
+#whatCanIdoSectionMainParent img {
+  left: 1rem;
+  top: -11rem;
+  width: 100%;
+  animation: movement 5s forwards infinite cubic-bezier(0.17, 0.2, 0.48, 0.52);
+  position: absolute;
+}
+
+@keyframes movement {
+  0% {
+    left: 1rem;
+    top: -11rem;
+  }
+
+  25% {
+    left: 2rem;
+    top: -11rem;
+  }
+
+  50% {
+    left: 2rem;
+    top: -10rem;
+  }
+
+  75% {
+    left: 1rem;
+    top: -10rem;
+  }
+
+  100% {
+    left: 1rem;
+    top: -11rem;
+  }
+}
+
+#whatCanIdoSectionMainParent span {
+  margin-right: 4rem;
+  color: white;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+}
+
+#whatCanIdoSectionMainParent p {
+  margin-right: 4rem;
+  color: white;
+  font-weight: 200;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}

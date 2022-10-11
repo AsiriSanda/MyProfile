@@ -4,7 +4,7 @@
 
 <h3 align="center">Home </h3>
 
-![Home Section Img](assets/images/preview/home.png)
+![Home Section Img](assets/images/preview/home.PNG)
 
 <h3 align="center">About Me</h3>
 
